@@ -1,0 +1,185 @@
+@import url('https://fonts.cdnfonts.com/css/thegoodmonolith');
+
+#page{
+       align-items: center;
+       background-image: url(mint.jpeg);
+       width: 100%;
+       height: 100%;
+       padding-top: 5%;   
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 120px;
+}
+
+#wel{
+    font-size:62px; 
+    font-family: 'TheGoodMonolith', sans-serif;
+    color: white;
+    text-align: center;
+    border-bottom-style: solid; 
+    border-bottom-color: black;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'TheGoodMonolith', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 463px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 300px;
+}
+
+.button {
+  position: relative;
+  padding: 16px 30px;
+  font-size: 1.5rem;
+  color: antiquewhite;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-shadow: 0 0 15px #9BA17B;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+
+.button:hover {
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 0px plum;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.button:hover::before {
+  transform: scale(1);
+  transition-delay: 0s;
+  box-shadow: 0 0 10px plum,
+    0 0 30px plum,
+    0 0 60px plum;
+}
+
+.button span {
+  position: absolute;
+  background-color: black;
+  pointer-events: none;
+  border-radius: 2px;
+  box-shadow: 0 0 0 black,
+    0 0 20px black,
+    0 0 30px black,
+    0 0 50px black,
+    0 0 100px black;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.button:hover span {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.button span:nth-child(1),
+.button span:nth-child(3) {
+  width: 40px;
+  height: 4px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateX(0);
+}
+
+.button span:nth-child(2),
+.button span:nth-child(4) {
+  width: 4px;
+  height: 40px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateY(0);
+}
+
+.button span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -50px;
+  transform-origin: left;
+}
+
+.button:hover span:nth-child(1) {
+  left: 50%;
+}
+
+.button span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transform-origin: right;
+}
+
+.button:hover span:nth-child(3) {
+  right: 50%;
+}
+
+.button span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -50px;
+  transform-origin: top;
+}
+
+.button:hover span:nth-child(2) {
+  top: 50%;
+}
+
+.button span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -50px;
+  transform-origin: bottom;
+}
+
+.button:hover span:nth-child(4 ) {
+  bottom: 50%;
+}
+
+
+
+/*
+  animation-name: papiti;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:  ease-in;
+
+    @keyframes papiti{
+        from{background-color: pink;}
+        to{background-color: white;} 
+    }
+*/

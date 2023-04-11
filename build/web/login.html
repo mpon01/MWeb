@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <!--<script defer src="login.js"></script>-->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="cont">
+        
+            <div id="top"> 
+                SIGN IN
+            </div>
+        <span style="font-family: 'Poppins', sans-serif; text-align: left; font-size: 12px; padding-left: 15%;">Please enter your login credentials</span>
+        <br> <br> <br>
+        <form id="form" action="login" method="POST" name="myform" onsubmit="return (validate());">   
+       <div id="stud">
+            <label for="email"></label>
+            <input id="email" type="text" name="email" size="30" placeholder="E-mail Address" class="mainLoginInput" required="">
+       </div>
+        <br>
+       <div id="passw">
+        <label for="password"></label>
+        <input id="password" type="password" name="password" size="30" placeholder="Password" class="mainLoginInput" required="">
+        </div>
+        <br> <br>
+        <div>
+            <center>
+            <button id="loginBtn" type="submit"><span style="font-weight: bold; color: white;">LOGIN</span></button>
+            <br> <br> <br>
+            <table>
+                <tr id="fyp">
+                    <td><a href="#" style="color:black;">Forgot your password?<br>
+                        </a><span style="font-style: italic; font-size: 14px;">Contact portal admin.</span><br><br></td>
+                </tr>
+                
+                <tr>
+                    <td><a href="signup.html" style="color: black;">New User? Sign Up Now!</a></td>
+                </tr>
+                
+            </table>
+            
+            </center>
+        </div>
+        
+        <br> <br> <br> 
+        </form>
+       
+    </div>
+</body>
+</html>
+
+
+<!--<a href="first.html" style="color: black; font-size: 16px;">  <-- Back Home </a> <br>-->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script defer src="signup.js"></script>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="cont">
+            <div id="top">
+                SIGN UP
+            </div>
+        <span style="font-family: 'Poppins', sans-serif; text-align: left; font-size: 12px; padding-left: 15%;">Please enter your login credentials</span>
+        <br> <br> <br>
+        <form id="form" action="signup" method="POST" name="myform" onsubmit="return (validate());">   
+        <div id="studname">
+            <label for="fullname"></label>
+            <input id="names" type="text" name="fullname" size="30" placeholder="Full Name" class="mainLoginInput" required="">
+       </div>
+        <br>
+       <div id="stud">
+            <label for="email"></label>
+            <input id="email" type="text" name="email" size="30" placeholder="E-mail Address" class="mainLoginInput" required="">
+       </div>
+        <br>
+       <div id="passw">
+            <label for="password"></label>
+            <input id="password" type="password" name="password" size="30" placeholder="Password" class="mainLoginInput" required="">
+        </div>
+        <br> 
+        <div id="passw2">
+            <label for="password2"></label>
+            <input id="password2" type="password" name="password2" size="30" placeholder="Confirm Password" class="mainLoginInput" required="">
+        </div>
+        <br> <br>
+        <div>
+            <center>
+            <button id="signupBtn" type="submit"><span style="font-weight: bold; color: white;">SIGN UP</span></button>
+            <br> <br> 
+            <div id="login">
+                    <a href="login.html" style="color: black;">Have an account? Login</a>
+            </div>
+            
+            </center>
+        </div>
+        
+        <br> <br> 
+        </form>
+       
+    </div>
+</body>
+</html>
+

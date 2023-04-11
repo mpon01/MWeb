@@ -1,0 +1,147 @@
+@import url('https://fonts.cdnfonts.com/css/thegoodmonolith');
+
+    #ontop{
+        background-color: whitesmoke;
+        opacity: 0.6;
+    }
+    
+    body{
+        background-image: url(../images/mystones1.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: scroll;
+    }
+
+    #cont{
+        margin-top: 8%;
+        margin-bottom: 10%;
+        text-align: left;
+        background-color: rgb(255, 255, 255);
+        margin-left: 50%;
+        margin-right: 10%;
+        border: 1px solid #ccdce3;
+        opacity: 0.75;
+        font-family: 'Century Gothic', sans-serif;
+    }
+
+
+    #top{
+        padding-left: 15%;
+        font-size: 35px;
+        font-family: 'Century Gothic',sans-serif;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        text-align: left;
+        font-weight: bolder;
+
+    }
+
+    #studname{
+        font-family: 'Century Gothic', sans-serif;
+        font-size:24px;
+        text-align: center;
+    }
+    
+    #stud{
+        font-family: 'Century Gothic', sans-serif;
+        font-size:24px;
+        text-align: center;
+    }
+
+    #passw{
+        font-family: 'Century Gothic', sans-serif;
+        font-size:24px;
+        text-align: center;
+    }
+    
+    #passw2{
+        font-family: 'Century Gothic', sans-serif;
+        font-size:24px;
+        text-align: center;
+    }
+
+    input {
+        border: 0;
+        border-bottom: 1.5px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+        margin: 0;
+        background: transparent;
+        background-color: white;
+        font-size: 13px;
+        padding: 14px 18px;
+    }
+
+    #login{
+        font-family: 'Century Gothic', sans-serif;
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    #signupBtn{
+        border-radius: 25px;
+        border: 1px solid white;
+        background: transparent;
+        background-color: black;
+        text-align: center;
+        height: 80%;
+        width: 30%;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #signupBtn:hover{
+        box-shadow: 0 0 30px pink;
+    }
+
+    #signupBtn:active {
+        box-shadow: 2px 2px 5px #979bca;
+    }
+
+
+    #confirm{
+        display: none;
+        background-color: purple;
+        color: black;
+        border: 1px solid yellowgreen;
+        position: fixed;
+        width: 300px;
+        height: 100px;
+        left: 30%;
+        top: 30%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    #confirm button{
+        background-color: blueviolet;
+        display: inline-block;
+        border-radius: 12px;
+        border: 4px solid red;
+        padding: 5px;
+        text-align: center;
+        width: 60px;
+        cursor: pointer;
+    }
+    
+    #confirm .message{
+        text-align: center;
+    }
+    
+    .mainLoginInput::-webkit-input-placeholder {
+        font-family: 'Century Gothic', sans-serif;
+      }
+
+      .mainLoginInput:-ms-input-placeholder {
+        font-family: 'Century Gothic', sans-serif;
+      }
+
+      .mainLoginInput:-moz-placeholder {
+        font-family: 'Century Gothic', sans-serif;
+      }
+
+      .mainLoginInput::-moz-placeholder {
+        font-family: 'Century Gothic', sans-serif;
+      }
+

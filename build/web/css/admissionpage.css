@@ -1,0 +1,114 @@
+        body{
+            background-image: url(../images/mystones1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            font-family: "Century Gothic", sans-serif; 
+            font-size: 14px;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        #theform{
+            margin-left: 10%;
+            font-family: 'Century Gothic', sans-serif;
+            font-weight: bolder;
+        }
+        
+        #cont{
+            margin-top: 10%;
+            margin-bottom: 10%;
+            text-align: left;
+            font-size: 16px;
+            background-color: white;
+            margin-left: 40%;
+            margin-right: 15%;
+            border: 1px solid #ccdce3;
+            opacity: 0.75;
+            font-family: 'Century Gothic', sans-serif;
+            font-weight: bold;
+        }
+
+        #top{
+            font-size: 32px; 
+            font-family: 'Century Gothic', sans-serif; 
+            margin-left: 10%; 
+            margin-right: 20%;
+            border-bottom: 1.5px solid black;
+        }
+
+        input {
+            border: 0;
+            margin: 0;
+            border-bottom: 1.5px solid black;
+            background: transparent;
+            background-color: white;
+            font-size: 13px;
+            padding: 14px 18px;
+        }
+                
+        input[type=file]{
+            border:0;
+        }
+        
+        input[type=file]::file-selector-button {
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: 0;
+            background: transparent;
+            background-color: white;
+            font-size: 13px;
+            padding: 10px 8px;
+            cursor: pointer;
+        }
+
+        input[type=file]::file-selector-button:hover {
+             background-color: sandybrown;
+        }
+        
+        #gend{
+            text-align: left;
+        }
+        
+        #Btn{
+            border-radius: 25px;
+            color: white;
+            border: 1px solid black;
+            background-color: black;
+            text-align: center;
+            height: 80%;
+            width: 35%;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #Btn2{
+            border-radius: 25px;
+            border: 1px solid white;
+            background: transparent;
+            background-color: black;
+            text-align: center;
+            height: 80%;
+            width: 35%;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #Btn:hover {
+            box-shadow: 0 0 30px plum;
+        }
+        
+        
+        #Btn2:hover {
+            box-shadow: 0 0 30px plum;
+        }
+        
+        #Btn:active {
+             box-shadow: 2px 2px 5px #979bca;
+        }
+        
+        #Btn2:active {
+             box-shadow: 2px 2px 5px #979bca;
+        }

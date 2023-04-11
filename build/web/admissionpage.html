@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Page</title>
+    <script defer src="admissionpage.js"></script>
+    <link rel="stylesheet" href="admissionpage.css">
+</head>
+<body>
+    <div id="cont">
+        <h1 id="top">Student Registration Form</h1>
+        <br>
+        <form action="register" method="POST" id="theform" name="adpage" onsubmit="return (validate());">
+            First Name: <span style="color: red;">*</span> &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" name="fname" size="30" placeholder="First Name" />
+            <br> <br>
+            Surname: <span style="color: red;">*</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="text" name="sname" size="30" placeholder="Surname" />
+            <br> <br>
+            Date Of Birth: <span style="color: red;">*</span>  &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="date" name="dob" required=""/>
+            <br> <br>
+            Gender: <span style="color: red;">*</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="gender" value="Female" required=""/>
+                    Female
+                    &nbsp; &nbsp;
+                    <input type="radio" name="gender" value="Male" required=""/>
+                    Male
+            <br> <br>
+            E-mail Address: <span style="color: red;">*</span>  &nbsp; &nbsp;
+            <input type="text" name="email" size="30" placeholder="youremail@xyz.com" />
+            <br> <br>
+            Phone Number: <span style="color: red;">*</span>  &nbsp; &nbsp;
+            <input type="text" name="phone" size="30" placeholder="+250(0)712345678" />
+            <br> <br> 
+            Faculty: <span style="color: red;">*</span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select name="faculty" required=""
+            style="background-color: transparent; color: black; border: 0; 
+            border-bottom: 1px solid black; padding: 12px 15px;">
+                <option label=" ">
+                <option value="Business Administration">Business Administration</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Education">Education</option>
+                <option value="Theology">Theology</option>
+                <option value="Nursing & Midwifery">Nursing & Midwifery</option>
+            </select>
+            <br> <br> 
+            Program: <span style="color: red;">*</span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select name="program" required=""
+            style="background-color: transparent; color: black; border: 0;
+            border-bottom: 1px solid black; padding: 12px 15px;">
+                <option label=" ">
+                <option value="Day">Day</option>
+                <option value="Evening">Evening</option>
+            </select>
+            <br> <br> <br>
+            Passport Picture: <span style="color: red;">*</span> &nbsp; &nbsp; 
+            <span style="font-size: 12px; font-style: italic;">(Supported types: .jpg or .png)</span> <br>
+            <center>
+            <input type="file" name="passpic" accept=".jpg,.png" required=""/>
+            </center>
+            <br> 
+            Diploma Certificate: <span style="color: red;">*</span>  &nbsp; &nbsp; 
+            <span style="font-size: 12px; font-style: italic;">(Supported types: PDF only)</span> <br>
+            <center>
+            <input type="file" name="certificate" accept=".pdf" title=" " required=""/>
+            </center>
+            <br> <br> <br>
+            <button type="submit" id="Btn"><span style="font-weight: bold; color: white;">SUBMIT</span></button>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <button type="reset" id="Btn2"><span style="font-weight: bold; color: white;">CANCEL</span></button>
+            <br> <br> <br> 
+        </form>
+    </div>
+</body>
+</html>
+
+
